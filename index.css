@@ -1,22 +1,4 @@
-@media(min-width: 0px) and (max-width : 395px) {
-  #imagesBox {
-    columns : 1;
-    width : 95%;
-  }
-  #smallBoxes {
-    grid-template-columns: repeat(3, 30%);
-    
-  }
-  .removeDiv_img {
-    
-  }
-}
-@media (min-width : 396px) and (max-width: 940px) {
-  #imagesBox {
-    columns : 2;
-  }
 
-}
 * {
   font-family: Helvetica;
 }
@@ -504,9 +486,6 @@ body {
   margin: 12% 0 0 12%;
 }
 
-div {
-  /* border: .2px solid black; */
-}
 
 /* /////////////////////my work//////////////// */
 
@@ -554,14 +533,14 @@ body {
 
 #navContainer {
   display: flex;
+  width: 97%;
   /* border: 1px solid red; */
   padding: 17px;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
-
 #leftNav {
   display: flex;
-  width: 15.5%;
+  width: 20.5%;
   justify-content: space-between;
   height: 35px;
 }
@@ -709,5 +688,47 @@ input:focus{
 ::-webkit-scrollbar {
   display: none;
 }
-
 /* /////// navbar css ends//////// */
+@media(min-width: 0px) and (max-width : 395px) {
+  #imagesBox {
+    columns : 1;
+    width : 95%;
+  }
+  #smallBoxes {
+    grid-template-columns: repeat(3, 33%);
+    justify-content: space-between;
+  }
+  .removeDiv_img {
+    display : none;
+  }
+  .newPostBtn {
+    display : none;
+  }
+  #rightNav {
+    display : none;
+  }
+  .navLogo {
+    width : 10%;
+  }
+}
+@media (min-width : 396px) and (max-width: 1140px) {
+  #imagesBox {
+    columns : 2;
+  }
+  #smallBoxes {
+    grid-template-columns: repeat(6, 22%);
+    justify-content: space-between;
+  }
+  .removeDiv_img {
+    display : none;
+  }
+  .mindDD {
+    display : block;
+  }
+  .newPostBtn {
+    display : none;
+  }
+  #rightNav {
+    display : none;
+  }
+}
